@@ -23,8 +23,6 @@ collections:
     folder: "images/uploads"
     create: true
     slug: "{{slug}}"
-    media_folder: ""
-    public_folder: ""
     fields:
       - { label: "Imagen", name: "image", widget: "image" }
       - { label: "Descripción", name: "description", widget: "string", required: false }
