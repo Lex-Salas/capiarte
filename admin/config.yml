@@ -1,0 +1,30 @@
+backend:
+  name: github
+  repo: Lex-Salas/capiarte
+  branch: main
+  site_domain: capiarte.netlify.app
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "testimonios"
+    label: "Testimonios"
+    folder: "_testimonios"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nombre", name: "nombre", widget: "string" }
+      - { label: "Edad", name: "edad", widget: "number" }
+      - { label: "Texto", name: "body", widget: "text" }
+
+  - name: "galeria"
+    label: "Galería"
+    folder: "images/uploads"
+    create: true
+    slug: "{{slug}}"
+    media_folder: ""
+    public_folder: ""
+    fields:
+      - { label: "Imagen", name: "image", widget: "image" }
+      - { label: "Descripción", name: "description", widget: "string", required: false }
