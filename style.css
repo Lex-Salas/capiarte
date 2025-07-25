@@ -87,3 +87,17 @@ footer {
     background-color: #000;
     font-size: 0.9rem;
 }
+
+.install-app {
+    margin: 40px auto;
+}
+#install-btn {
+    background-color: #d4af37;
+    color: #111;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
