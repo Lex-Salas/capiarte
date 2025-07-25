@@ -2,6 +2,7 @@ backend:
   name: github
   repo: Lex-Salas/capiarte
   branch: main
+  site_domain: capiarte.netlify.app
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
