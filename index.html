@@ -4,34 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CapiArte - Hair Care</title>
+    <title>CapiArte Hair Care</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("service-worker.js");
+        }
+    </script>
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="CapiArte Logo" class="logo">
+        <img src="images/icon.png" alt="CapiArte Logo" class="logo">
         <h1>CapiArte</h1>
         <p class="subtitle">Tratamientos capilares a domicilio con Maribel</p>
     </header>
-
     <section class="intro">
         <h2>¡Es hora de lucir un cabello espectacular!</h2>
         <p>Disfrutá del poder del <strong>Botox Capilar</strong></p>
     </section>
-
     <section class="benefits">
         <div class="benefit">💧 Hidratación</div>
         <div class="benefit">🍑 Restauración</div>
         <div class="benefit">👩‍🦰 Alisado</div>
         <div class="benefit">💪 Fortalecimiento</div>
     </section>
-
+    <section class="gallery">
+        <h2>Galería de Resultados</h2>
+        <div class="gallery-images">
+            <img src="images/before_after_1.jpg" alt="Resultado 1">
+            <img src="images/before_after_2.jpg" alt="Resultado 2">
+            <img src="images/before_after_3.jpg" alt="Resultado 3">
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2>Testimonios</h2>
+        <blockquote>“Mi experiencia en CapiArte viene de hace aproximadamente cinco años... Los resultados fueron espectaculares.” – Alejandra, 35 años</blockquote>
+        <blockquote>“Llegué a CapiArte con el cabello súper maltratado... El resultado fue increíble.” – Sofia, 26 años</blockquote>
+        <blockquote>“Tengo el cabello rizado y siempre batallaba con el frizz... El resultado superó mis expectativas.” – Valentina, 32 años</blockquote>
+    </section>
     <section class="cta">
         <p>Lucí un cabello sano, brillante y renovado... ¡sin salir de casa!</p>
-        <p><strong>📍 Servicio 100% a domicilio</strong></p>
-        <a href="https://wa.me/5490000000000" class="btn" target="_blank">Reservar por WhatsApp</a>
+        <a href="https://wa.me/50684794991?text=¡Hola!%20Quisiera%20reservar%20un%20turno%20para%20un%20tratamiento%20capilar%20con%20CapiArte%20💇‍♀️✨" class="btn" target="_blank">Reservar por WhatsApp</a>
     </section>
-
+    <section class="contact-form">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo" required>
+            <textarea placeholder="Escribí tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
     <footer>
         <p>&copy; 2025 CapiArte. Todos los derechos reservados.</p>
     </footer>

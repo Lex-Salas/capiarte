@@ -1,0 +1,15 @@
+{
+    "name": "CapiArte Hair Care",
+    "short_name": "CapiArte",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#111111",
+    "theme_color": "#d4af37",
+    "icons": [
+        {
+            "src": "images/icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
