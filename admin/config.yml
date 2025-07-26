@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: Lex-Salas/capiarte
   branch: main
+  auth_scope: repo
+  client_id: 0v2311bs2bpKAIvwq95Y
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
