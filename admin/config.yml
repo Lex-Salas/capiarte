@@ -1,9 +1,6 @@
 backend:
-  name: github
-  repo: Lex-Salas/capiarte
+  name: git-gateway
   branch: main
-  auth_scope: repo
-  client_id: 0v2311bs2bpKAIvwq95Y
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -26,4 +23,4 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Imagen", name: "image", widget: "image" }
-      - { label: "Descripción", name: "description", widget: "string", required: false }
+      - { label: "Descripción", name: "descripcion", widget: "string", required: false }
