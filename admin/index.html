@@ -5,12 +5,17 @@
     <title>CMS</title>
   </head>
   <body>
-    <script>window.CMS_MANUAL_INIT = true;</script>
+    <!-- Este script carga Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.10.0/dist/netlify-cms.js"></script>
+
+    <!-- Este es el script para que sepa dónde está el config.yml -->
     <script>
-      CMS.init({
-        config: "/admin/config.yml"
-      });
+      window.CMS_MANUAL_INIT = true;
+      window.CMS_INIT = () => {
+        CMS.init({
+          config: "/admin/config.yml"
+        });
+      };
     </script>
   </body>
 </html>
